@@ -1,46 +1,93 @@
 :root {
-    --pink: #f5b7b1;
-
+  --pink: #f5b7b1;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Mukta", sans-serif;
 }
 
-header {
-    background: #B6746D;
-    display: flex;
+.title {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  font-size: 50px;
+  margin-top: 40px;
 }
 
-.title {
-    margin: 30px 0 60px 135px;
-  color: var(--pink);
-  font-family: "Shizuru";
-  display: inline-block;
+header {
+  width: 100%;
+  height: 450px;
+  background: #bc4e9c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(340, 95%, 50%, 0.61),
+      hsla(317, 45%, 52%, 0.527)
+    ),
+    url(../img/portada.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+      to right,
+      hsla(340, 95%, 50%, 0.61),
+      hsla(317, 45%, 52%, 0.527)
+    ),
+    url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
-header img {
-    width: 100px;
-    left: 0;
-    position: absolute;
-    top: 30px;
-    margin-left: 15px;
+.icon {
+    position: relative;
+    bottom: 200px;
+    width: 150px;
 }
 
-ul {
-    list-style-type: none;
-}
 
-ul li {
-    display: inline-block;
+nav {
     text-align: right;
-    margin-right: 30px;
+    padding: 30px 50px 0 0;
+    border-bottom: 2px solid #3f3f3f;
+    display: inline-block;
+    margin-left: 200px;
+    font-size: 18px;
+}
+
+nav a {
+    color: #000;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+header h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Shizuru';
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 img {
-    max-width: 250px;
+  max-width: 250px;
 }
