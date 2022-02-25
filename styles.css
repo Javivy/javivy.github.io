@@ -6,20 +6,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Mukta", sans-serif;
+  background: #929292;
 }
 
 .title {
   color: #fff;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   margin-bottom: 70px;
   position: relative;
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 55px;
 }
 
 header {
@@ -31,16 +33,17 @@ header {
       hsla(340, 95%, 50%, 0.61),
       hsla(317, 45%, 52%, 0.527)
     ),
-    url(../img/portada.jpg); /* Chrome 10-25, Safari 5.1-6 */
+    url(img/background.jpg); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
       to right,
       hsla(340, 95%, 50%, 0.61),
       hsla(317, 45%, 52%, 0.527)
     ),
-    url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    url(img/background.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  background-position-y: 450px;
 }
 
 .icon {
@@ -53,27 +56,35 @@ header {
 nav {
     text-align: right;
     padding: 30px 50px 0 0;
-    border-bottom: 2px solid #3f3f3f;
+    border-bottom: 3px solid #88fae1;
     display: inline-block;
     margin-left: 200px;
     font-size: 18px;
 }
 
 nav a {
-    color: #000;
+    color: #fff;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
 }
 
+nav a span{
+  outline: 2px solid #88fae1;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
 nav a:hover {
     text-decoration: underline;
     color: #ddd;
+    font-size: 20px;
+    transition: all 0.5s;
 }
 
 nav a:visited {
     text-decoration: none;
-    color: #1f1f1f;
+    color: #b9ffea;
 }
 
 header h1{
@@ -91,3 +102,142 @@ header h1{
 img {
   max-width: 250px;
 }
+
+h2 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  border: 4px solid #9935b3;
+  margin: 15px 350px 15px 350px;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+#love{
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #1f1f1f;
+  border-radius: 10px;
+  margin: 40px;
+  display: flex;
+  background: #64124d;
+  color: #fff;
+}
+
+#love p{
+  margin: auto;
+  font-size: 20px;
+}
+
+#love img {
+  border: 3px solid #bc4e9c;
+  margin: 25px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.separator {
+  width: 75%;
+  padding: 7px;
+  border-radius: 20px;
+  background: #3f3f3f;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#goals{
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #1f1f1f;
+  border-radius: 10px;
+  margin: 40px;
+  display: flex;
+  background: #64124d;
+  color: #fff;
+}
+
+#goals p {
+  margin: auto;
+  font-size: 20px;
+}
+
+#goals img {
+  border: 3px solid #bc4e9c;
+  margin: 25px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#things-idl{
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #1f1f1f;
+  border-radius: 10px;
+  margin: 40px;
+  display: flex;
+  background: #64124d;
+  color: #fff;
+}
+
+#things-idl p {
+  margin: auto;
+  font-size: 20px;
+}
+
+#things-idl img {
+  border: 3px solid #bc4e9c;
+  margin: 25px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#things-ilfu{
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #1f1f1f;
+  border-radius: 10px;
+  margin: 40px;
+  display: flex;
+  background: #64124d;
+  color: #fff;
+}
+
+#things-ilfu p {
+  margin: auto;
+  font-size: 20px;
+}
+
+#things-ilfu img {
+  border: 3px solid #bc4e9c;
+  margin: 25px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#extras{
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #1f1f1f;
+  border-radius: 10px;
+  margin: 40px;
+  display: flex;
+  background: #64124d;
+  color: #fff;
+}
+
+#extras p {
+  margin: auto;
+  font-size: 20px;
+}
+
+#extras img {
+  border: 3px solid #bc4e9c;
+  margin: 25px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+
+
