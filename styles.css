@@ -24,6 +24,10 @@ body {
   margin-top: 55px;
 }
 
+header h1::selection {
+  background: #bc4e9c;
+}
+
 header {
   width: 100%;
   height: 450px;
@@ -66,13 +70,14 @@ nav a {
     color: #fff;
     font-weight: 300;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav a span{
   outline: 2px solid #88fae1;
   border-radius: 4px;
   font-weight: 600;
+  background: #9935b3;
 }
 
 nav a:hover {
@@ -114,6 +119,10 @@ h2 {
   border-radius: 8px;
 }
 
+h2::selection {
+  background: #bc4e9c;
+}
+
 #love{
   padding: 15px;
   text-align: center;
@@ -125,9 +134,27 @@ h2 {
   color: #fff;
 }
 
+#love p::selection, b::selection, h3::selection {
+  background: #bc4e9c;
+}
+
 #love p{
   margin: auto;
   font-size: 20px;
+  margin-top: 50px;
+  border-top: 2px solid #bc4e9c;
+}
+
+#love h3 {
+  margin: auto;
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  border: 4px solid #9935b3;
+  padding: 7px;
+  border-radius: 8px;
 }
 
 #love img {
@@ -136,6 +163,7 @@ h2 {
   border-radius: 15px;
   object-fit: cover;
 }
+
 
 .separator {
   width: 75%;
@@ -157,9 +185,27 @@ h2 {
   color: #fff;
 }
 
-#goals p {
+#goals p::selection, b::selection, h3::selection {
+  background: #bc4e9c;
+}
+
+#goals p{
   margin: auto;
   font-size: 20px;
+  margin-top: 50px;
+  border-top: 2px solid #bc4e9c;
+}
+
+#goals h3 {
+  margin: auto;
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  border: 4px solid #9935b3;
+  padding: 7px;
+  border-radius: 8px;
 }
 
 #goals img {
@@ -180,10 +226,29 @@ h2 {
   color: #fff;
 }
 
-#things-idl p {
+#things-idl p::selection, b::selection, h3::selection {
+  background: #bc4e9c;
+}
+
+#things-idl p{
   margin: auto;
   font-size: 20px;
+  margin-top: 50px;
+  border-top: 2px solid #bc4e9c;
 }
+
+#things-idl h3 {
+  margin: auto;
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  border: 4px solid #9935b3;
+  padding: 7px;
+  border-radius: 8px;
+}
+
 
 #things-idl img {
   border: 3px solid #bc4e9c;
@@ -203,10 +268,29 @@ h2 {
   color: #fff;
 }
 
-#things-ilfu p {
+#things-ilfu p::selection, b::selection, h3::selection {
+  background: #bc4e9c;
+}
+
+#things-ilfu p{
   margin: auto;
   font-size: 20px;
+  margin-top: 50px;
+  border-top: 2px solid #bc4e9c;
 }
+
+#things-ilfu h3 {
+  margin: auto;
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  border: 4px solid #9935b3;
+  padding: 7px;
+  border-radius: 8px;
+}
+
 
 #things-ilfu img {
   border: 3px solid #bc4e9c;
@@ -226,16 +310,49 @@ h2 {
   color: #fff;
 }
 
-#extras p {
+#extras p{
   margin: auto;
   font-size: 20px;
+  margin-top: 50px;
+  border-top: 2px solid #bc4e9c;
 }
+
+#extras p::selection, b::selection, h3::selection {
+  background: #bc4e9c;
+}
+
+#extras h3 {
+  margin: auto;
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  border: 4px solid #9935b3;
+  padding: 7px;
+  border-radius: 8px;
+}
+
 
 #extras img {
   border: 3px solid #bc4e9c;
   margin: 25px;
   border-radius: 15px;
   object-fit: cover;
+}
+
+@media screen and (max-width:1440){
+  nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: auto;
+  }
 }
 
 
